@@ -90,7 +90,6 @@ Relevante temaer
 * IAM -Vite hvordan man lager Aceess Keys
 * S3 – Vite hvordan du finner State bucket, lage egen bucket
 * ECR – Lage/finne repositories for dine bygg
-* Ved å bruke AWS UI/Console, Lag en Apprunner Service som kontinuerlig deployer dit container image hver det oppdateres
 * Vite hva AWS SAM er og hva det kan brukes til 
 
 ### Terraform IAC 
@@ -116,8 +115,8 @@ Relevante temaer
 
 AWS App runner
 
+* Ved å bruke AWS UI/Console, Lag en Apprunner Service som kontinuerlig deployer dit container image hver det oppdateres
 * Vite hva tjenesten Apprunner gjør 
-* Kunne bruke AWS GUI til å lage en tjeneste med AWS apprunner som kjører et Container basert på et Image i ECR. 
 * Kune lage Terraform-kode for en AWS Apprunner tjeneste 
 
 ## Feedback 
