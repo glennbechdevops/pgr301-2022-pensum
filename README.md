@@ -82,7 +82,8 @@ Relevante temaer
 * Bruk docker login til å autentisere docker mot AWS ECR 
 * Bruk AWS og tjenesten ECR til å lage repository for et container image
 * La en GitHub actions Workflow publisere et nytt container image til ECR for hver commit på main branch 
- 
+
+
 ### AWS 
 
 * IAM – Finne din egen bruker I IAM
@@ -98,9 +99,13 @@ Presentasjon
 
 https://kristiania.instructure.com/files/960179/download?download_frd=1
 
+Lab 
+
+https://github.com/glennbechdevops/terraform-app-runner
+
 Relevante temaer 
 
-* Forståelse for  Terraform AWS provider
+* Forståelse for Terraform AWS provider
 * Terraform resource, variabel og provider
 * Terraform variabler, typer og defaultverdier
 * Gi terraform variabler fra CLI  forks ```terraform apply --var="student_name=glennbech"```
@@ -109,6 +114,12 @@ Relevante temaer
 * Lag en S3 Backend I provider-konfigurasjon for å lagre state i S3 bucket
 * Lage pipeline som kjører Terraform i fra GitHub actions.
 
+AWS App runner
+
+* Vite hva tjenesten Apprunner gjør 
+* Kunne bruke AWS GUI til å lage en tjeneste med AWS apprunner som kjører et Container basert på et Image i ECR. 
+* Kune lage Terraform-kode for en AWS Apprunner tjeneste 
+
 ## Feedback 
 
 ### Prinsipper for feedback
@@ -116,7 +127,6 @@ Relevante temaer
 Presentasjon 
 
 https://kristiania.instructure.com/files/990060/download?download_frd=1
-
 
 * Se problemer når de oppstår- og løse små problemer før de blir større. 
 * Tenk på et samlebånd der deler på en stasjon plutselig har feil. I Toyota production system stopper de hele produksjonen for å finne rot-årsak, hvis feilen ikke en konsekvent og kan løses lokalt på kort tid - Hva betyr dette prinsippet i en Software kontekst? 
