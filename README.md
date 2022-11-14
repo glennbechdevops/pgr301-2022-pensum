@@ -67,6 +67,10 @@ Presentasjon
 
 https://kristiania.instructure.com/files/949330/download?download_frd=1
 
+Lab
+
+https://github.com/glennbechdevops/spring-docker-dockerhub
+
 Relevante temaer
 
 * Lag Dockerfile som kompilerer applikasjon og lager et Container image
@@ -105,34 +109,49 @@ Relevante temaer
 * Lag en S3 Backend I provider-konfigurasjon for å lagre state i S3 bucket
 * Lage pipeline som kjører Terraform i fra GitHub actions.
 
-
-
-### Kontroll på egen PC/mac
-
-* AWS CLI Installasjon
-* AWS configure
-* Docker
-* Maven, Java SDK & Spring Boot, mvn spring-boot:run
-
 ## Feedback 
 
 ### Prinsipper for feedback
+
+Presentasjon 
+
+https://kristiania.instructure.com/files/990060/download?download_frd=1
+
 
 * Se problemer når de oppstår- og løse små problemer før de blir større. 
 * Tenk på et samlebånd der deler på en stasjon plutselig har feil. I Toyota production system stopper de hele produksjonen for å finne rot-årsak, hvis feilen ikke en konsekvent og kan løses lokalt på kort tid - Hva betyr dette prinsippet i en Software kontekst? 
 * Kvalitet skal oppstå ved kilden. I DevOps fokuserer man på å øke kvaliteten på kode som skrives, ikke på QA og test for å kompansere for dårlig kvalitet. 
 * I DevOps automatiserer man så mye som mulig, inkludert prosesser for QA. 
 
-### Spring boot  & Metrisc med Micrometer
+### Spring boot & Metrisc med Micrometer
+
+Presentasjon 
+
+https://kristiania.instructure.com/files/990059/download?download_frd=1
+
+Lab 
+
+https://github.com/glennbechdevops/terraform-cloudwatch-dashboard
 
 * Vite hvordan man bruker Gauge, Counter, og @Timed
 * Legge til nødvendige avhengigheter i pom.xml for å legge til Metrics i koden som sendes til AWS CloudWatch 
 * Se på CloudWatch metrics i AWS, forstå hvordan man viser grafer og hvilke matematiske funksjoner som passer for de ulike type metrikker
 * Lage CloudWatch Dashboard
+* Lage Terraform-kode som lager Cloudwatch dashboard 
+* Lage en GitHub actions pipeline som lager kjører Terraform  
 
 ## Alarmer 
+
+Presentasjon
+
+https://kristiania.instructure.com/files/1002528/download?download_frd=1
+
+Lab 
+
+https://github.com/glennbechdevops/cloudwatch_alarms_terraform
 
 * Lage CloudWatch Alarm basert på en metrikk 
 * Forstå prinsippene for en alarm. Metrikk, terskelverdi, antall brudd, tidsperiode
 * Sende Alarm til SNS Topic
 * Lage en subscription på en SNS topic som sender en alarm til epost, http eller valgfritt endepunkt. 
+* Lage Terraform-kode som lager Cloudwatch alarm 
