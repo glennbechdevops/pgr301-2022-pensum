@@ -132,7 +132,7 @@ https://kristiania.instructure.com/files/990060/download?download_frd=1
 * Kvalitet skal oppstå ved kilden. I DevOps fokuserer man på å øke kvaliteten på kode som skrives, ikke på QA og test for å kompansere for dårlig kvalitet. 
 * I DevOps automatiserer man så mye som mulig, inkludert prosesser for QA. 
 
-### Spring boot & Metrisc med Micrometer
+### Spring boot & Metrics med Micrometer
 
 Presentasjon 
 
@@ -142,7 +142,7 @@ Lab
 
 https://github.com/glennbechdevops/terraform-cloudwatch-dashboard
 
-* Vite hvordan man bruker Gauge, Counter, og @Timed
+* Spring Boot micrometer: Vite hvordan man bruker Gauge, Counter, og @Timed
 * Legge til nødvendige avhengigheter i pom.xml for å legge til Metrics i koden som sendes til AWS CloudWatch 
 * Se på CloudWatch metrics i AWS, forstå hvordan man viser grafer og hvilke matematiske funksjoner som passer for de ulike type metrikker
 * Lage CloudWatch Dashboard
