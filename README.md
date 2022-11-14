@@ -1,8 +1,19 @@
 # Pensumliste PGR301 
 
+## INTRO TIL DEVOPS 
+
+* Hva er DevOps, Hvorfor DevOps funker ; https://kristiania.instructure.com/courses/8662/files/folder/01-intro
+* De tre DevOps prinsippene; Flow, Feedback og kontinerlig forbedring 
+* DevOps satt i sammenheng med andre metoder som for eksempel smidig og vannfall 
+
 ## FLOW 
 
-* Prinsipper for flow. 
+Presentasjon
+
+* Prinsipper for flow. https://kristiania.instructure.com/files/931596/download?download_frd=1
+
+Relevante temaer 
+
 * Hva er "Waste" eksempler på dette i systemutvikling? 
 * Forstå viktigheten av å bekgrense oppgavestørrelse, og "One piece flow"
 * Forstå hvorfor vi forsøker å redusere antall overleveringer i DevOps
@@ -10,29 +21,62 @@
 
 ### CI
 
-* Bruk gjerne Spring Initializer - https://start.spring.io - lag en Spring Boot app
-* Lag et nytt repository på GitHub
-* GitHub Branch protection 
-* GitHub Status-sjekker.
-* GitHub Godkjenning før Merge
-* Lage pipeline med GitHub actions som kjører maven, unit tester og bygger jar
-* Pipeline skal feile ved kompileringsfeil, enhetstest-feil
-* Registrere Repository secrets I et GitHib repository, bruke disse fra en GitHub ACtions workflow/pipeline
+Presentasjon
 
-### DOCKER 
+* Continous integration: https://kristiania.instructure.com/files/931597/download?download_frd=1
+
+Lab 
+
+* https://github.com/glennbechdevops/01-CI-Github-actions
+
+Relevante temaer
+
+* Bruk gjerne Spring Initializer - https://start.spring.io - lag en Spring Boot app
+* Lag et nytt repository på GitHub, og sjekk inn koden
+* Konfigurer GitHub Branch protection - slik at man må lage en Pull request før merge til main branch
+* Slå på GitHub Status-sjekker, slik at maven må bygge, tester kjøre osv før Pull request kan merges til main
+* GitHub Pull requrst med godkjenning av andre før Merge til main 
+* Pipeline skal feile ved kompileringsfeil, enhetstest-feil
+* Clean commits; hvordan bruke git rebase for å ikke få hver eneste commit fra en feature branch inn i main.
+
+GitHub Actions
+
+* Registrere Repository secrets I et GitHib repository, bruke disse fra en GitHub ACtions workflow/pipeline
+* Hvordan bruke "on" for å bestemme hva som er trigger for workflow 
+* Lage pipeline som kjører maven, unit tester og bygger jar
+
+### Continous Delivery / CD
+
+Presentasjon
+
+* Continous Delivery https://kristiania.instructure.com/files/938002/download?download_frd=1
+* AWS Lamda og SLS https://kristiania.instructure.com/files/947525/download?download_frd=1
+
+Lab
+
+* Deployment av AWS Lambda med SAM og Github acitons https://github.com/glennbechdevops/02-CD-AWS-lamda-sls
+
+Relevante temaer
+
+* Hva er AWS Lambda
+* Hva er Serverless Framework
+
+### Docker
+
+Presentasjon 
+
+https://kristiania.instructure.com/files/949330/download?download_frd=1
+
+Relevante temaer
 
 * Lag Dockerfile som kompilerer applikasjon og lager et Container image
 * Grunnleggende docker build, start, run, ps & run
 * Docker port mapping
 * Docker tag
-* Push docker image til Docker Hub 
+* Push docker image til Docker Hub
 * Push docker image til Amazon ECR
-
-### DOCKER / CD
-
 * Bruk docker login til å autentisere docker mot AWS ECR 
-* Bruk AWS og tjenesten ECR til å lage et repository for ditt container image
-* Kjør Docker build, 
+* Bruk AWS og tjenesten ECR til å lage repository for et container image
 * La en GitHub actions Workflow publisere et nytt container image til ECR for hver commit på main branch 
  
 ### AWS 
@@ -46,14 +90,22 @@
 
 ### Terraform IAC 
 
+Presentasjon
+
+https://kristiania.instructure.com/files/960179/download?download_frd=1
+
+Relevante temaer 
+
 * Forståelse for  Terraform AWS provider
-* Terraform resource, variabel og provder
+* Terraform resource, variabel og provider
 * Terraform variabler, typer og defaultverdier
 * Gi terraform variabler fra CLI  forks ```terraform apply --var="student_name=glennbech"```
 * Kjør terraform init, fmt, validate, plan, apply, destroy uten backend
 * Forstå hva state filen sin hensikt er
-* Lag en s3 Backend I provider konfigurasjon for å lagre state i S3 bucket
-* Lage pipeline som kjører  Terraform i fra GitHub actions.
+* Lag en S3 Backend I provider-konfigurasjon for å lagre state i S3 bucket
+* Lage pipeline som kjører Terraform i fra GitHub actions.
+
+
 
 ### Kontroll på egen PC/mac
 
