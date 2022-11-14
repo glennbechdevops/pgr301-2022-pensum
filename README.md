@@ -6,6 +6,10 @@
 * De tre DevOps prinsippene; Flow, Feedback og kontinerlig forbedring 
 * DevOps satt i sammenheng med andre metoder som for eksempel smidig og vannfall 
 
+Lab
+
+* Bli kjent med Cloud 9 https://github.com/glennbechdevops/00-welcome-to-cloud9
+
 ## FLOW 
 
 Presentasjon
